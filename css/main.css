@@ -306,3 +306,7 @@ textarea {
 .election-rows {
     display: none;
 }
+
+#map {
+    height: 300px;
+}
