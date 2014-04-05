@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -39,7 +40,7 @@
                       <li><a href="#about">About</a></li>
                       <li><a href="#contact">Contact</a></li>
                     </ul>
-                    
+
                   </div><!--/.nav-collapse -->
                 </div>
               </div>
@@ -52,13 +53,17 @@
                 <h1>Well, hello!</h1>
                 <p>I hope you're here to find out how run for office. First, let's figure out where you are.</p>
                 <form class="navbar-form">
-                  <input class="span2" type="text" placeholder="Address or zip code">
+                  <input id="query" class="span2" type="text" placeholder="Address or zip code">
                   <button type="submit" class="btn btn-elections">Let's do this</button>
                 </form>
               </div>
-                
+
             <div class="election-rows">
-              <!-- Example row of columns -->
+              <div class="row">
+                <div class="span12">
+                  <div id="map"></div>
+                </div>
+              </div>
               <div class="row">
                 <div class="span4">
                   <h2>President</h2>
@@ -80,7 +85,7 @@
                           <p><a class="btn" href="#">Form of Declaration &raquo;</a></p>
                       </div>
                   </div>
-                  
+
                </div>
               </div>
           </div>
@@ -90,6 +95,9 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+        <script src="js/vendor/esri-leaflet.js"></script>
+        <script src="js/vendor/esri-leaflet-geocoder.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
