@@ -306,3 +306,7 @@ textarea {
 .election-rows {
     display: none;
 }
+
+.election-group {
+    display: none;
+}
