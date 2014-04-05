@@ -310,3 +310,7 @@ textarea {
 .election-group {
     display: none;
 }
+
+#map {
+    height: 300px;
+}
